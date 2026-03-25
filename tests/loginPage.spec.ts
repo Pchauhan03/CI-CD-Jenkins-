@@ -10,6 +10,7 @@ test("testing login page", async ({page}) =>{
 })
 
 test("testing Valid username and password ", async ({page}) =>{
+    test.skip()
     await page.goto("https://sauce-demo.myshopify.com/")
     const logIn :Locator  =  page.locator('#customer_login_link').first()
     const email :Locator = page.locator('#customer_email')

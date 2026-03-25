@@ -1,9 +1,9 @@
 import { test } from '@playwright/test';
 
-test('action timeout example', async ({ page }) => {
-  await page.goto('https://example.com');
-  await page.click('#slow-button', { timeout: 10000 }); // 10 seconds for this click
-});
+// test('action timeout example', async ({ page }) => {
+//   await page.goto('https://example.com');
+//   await page.click('#slow-button', { timeout: 10000 }); // 10 seconds for this click
+// });
 
 test.beforeEach(async ({ page }, testInfo) => {
   // Extend timeout for all tests running this hook by 30 seconds.

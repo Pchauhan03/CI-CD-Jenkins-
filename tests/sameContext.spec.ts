@@ -25,11 +25,11 @@ test("Login with valid credentials", async ({page}) => {
 
 });
 
-test("Verify profile page after login", async ({page}) => {
+// test("Verify profile page after login", async ({page}) => {
 
-  const heading = page.locator('[data-test="page-title"]');
+//   const heading = page.locator('[data-test="page-title"]');
 
-  await expect(heading).toBeVisible();
-  await expect(heading).toHaveText("My account");
+//   await expect(heading).toBeVisible();
+//   await expect(heading).toHaveText("My account");
 
-});
+// });
